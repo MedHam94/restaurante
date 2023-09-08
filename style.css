@@ -1,0 +1,285 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  
+}
+
+a{
+  text-decoration: none;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+/*Header*/
+
+header {
+  background: #eff4f7;
+  padding: 0;
+  margin: 0;
+  height: 47vw;
+}
+    /*NavBar*/
+    header nav{
+      width: 100%;
+      height: 55px;
+    }
+    header nav *{
+      float: left;
+    }
+
+      /*Nav List*/
+
+      .right-nav{
+        width: 60%;
+        float: right;
+      }
+      
+      .right-nav ul{
+        float: right;
+        list-style: none;
+        width: 100%;
+
+      }
+
+      .right-nav li {
+        width: 12.5%;
+        padding: 0 6%;
+        white-space: nowrap;
+        font-size: 1.1vw;
+      }
+      header a{
+        color: black;
+      }
+    /*Heading*/
+    header section {
+      padding: 1px 8%;
+    }
+
+    header section h1{
+      width: 40%;
+      font-size: 5vw;
+      font-family: 'DM Serif Display', serif;
+      font-weight: 100;
+    }
+      /*Form*/
+      .text-input {
+        border: none;
+        padding: 13px 20px;
+        border-radius: 10px 0 0 10px;
+        width: 37vw;
+        height: 3vw;
+        font-size: 1.5vw;
+        -webkit-border-radius: 10px 0 0 10px;
+           -moz-border-radius: 10px 0 0 10px;
+            -ms-border-radius: 10px 0 0 10px;
+             -o-border-radius: 10px 0 0 10px;
+}
+      
+      .button-input{
+        background: #ff8800;
+        color: white;
+        font-size: 1.5vw;
+        border: none;
+        border-radius: 0 10px 10px 0;
+        width: 10vw;
+        height: 3vw;
+        -webkit-border-radius: 0 10px 10px 0;
+           -moz-border-radius: 0 10px 10px 0;
+            -ms-border-radius: 0 10px 10px 0;
+             -o-border-radius: 0 10px 10px 0;
+}
+      /*Icons*/
+
+      header section i {
+        padding: 4vw 10vw 1vw 0;
+        font-size: 1.5vw;
+        color:  #ff8800;
+    }
+    /*Seconde*/
+    .second {
+      height: 47vw;
+      padding: 7vw 14vw 7vw 37vw;
+      font-size: 1.5vw;
+    }
+    .second span{
+      color: #ffaa4d;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+    }
+    .second h2{
+      font-family: 'DM Serif Display', serif;
+      font-size: 5vw;
+      margin: 0;
+      font-weight: 100;
+    }
+
+    .second p{
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.5;
+      font-size: 1.4vw;
+    }
+    .second a{
+      background: #ff8800;
+      padding: 1vw 1vw 0.8vw 1vw;
+      display: inline-block;
+      margin-top: 1.5vw;
+      border-radius: 6px 0px 0px 6px;
+      -webkit-border-radius: 6px 0px 0px 6px;
+         -moz-border-radius: 6px 0px 0px 6px;
+          -ms-border-radius: 6px 0px 0px 6px;
+           -o-border-radius: 6px 0px 0px 6px;
+      color: white;
+
+    }
+    .second i{
+      background: #ffaa4d;
+      color: white;
+      padding: 1vw 1vw;
+      margin-top: 1.5vw;
+      border-radius: 0px 6px 6px 0;
+      -webkit-border-radius: 0px 6px 6px 0;
+         -moz-border-radius: 0px 6px 6px 0;
+          -ms-border-radius: 0px 6px 6px 0;
+           -o-border-radius: 0px 6px 6px 0;
+      }
+
+/*Third*/ 
+.third{
+  height: 80vw;
+  font-size: 1.5vw;
+  padding: 4vw 0vw ;
+  background: #eff4f7;
+}
+      /*Title*/
+      .title{
+        text-align: center;
+        
+      }
+      .title span{
+        color: #ff8800;
+        font-family: 'Roboto', sans-serif;;
+        font-size:  1.5vw;
+      }
+      .title h2 {
+        font-family: 'DM Serif Display', serif;
+        font-size: 6vw;
+        font-weight: 100;
+        margin: 4vw 0;
+    }
+      .third .title ul {
+        margin: 0 auto;
+        padding: 0;
+        width: 50%;
+        border-bottom: 1px solid gray;
+      }
+      .third .title ul li{
+        display: inline-block;
+        padding: 0 4%;
+      }
+      .third .title li a{
+        color: black;
+        font-family: 'Roboto', sans-serif;
+      }
+      /*Choices*/
+      .third .choices{
+        
+        margin: 4vw auto;
+        width: 80%;
+        height: 10px;
+      }
+      .third .choices div {
+        float: left;
+        width: 13vw;
+        margin: 1vw 3vw;
+        height: 20vw;
+        background: #8b8f92;
+      }
+
+/*Fourth*/
+.fourth{
+  padding: 6vw 0;
+  background: white;
+  height: auto;
+} 
+      /*Title*/
+      .fourth .title h2{
+        margin-top: 1vw;
+      }
+      .fourth .title i {
+        display: block;
+        font-size: 2.6vw;
+        width: 5vw;
+        height: 5vw;
+        padding: 1vw 0;
+        margin: 0 auto 1vw;
+        border: 1px solid black;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+}
+      .fourth .title span {
+        display: block;
+        color: black;
+        font-size: 1.3vw;
+      }
+      .fourth .title a{
+        color: #ff8800;
+        font-size: 2.5vw;
+        font-family: 'DM Serif Display', serif;
+
+        font-weight: 100;
+      }
+      /*Work Time*/
+      .fourth .work-time {
+        padding: 1.5vw 16vw;
+      }
+
+      .fourth .work-time .left{
+        float: left;
+      }
+      .fourth .work-time span{
+        display: block;
+      }
+      .fourth .work-time .right{
+        float: right;
+      }
+      .fourth span + span{
+        font-family: 'DM Serif Display', serif;
+        font-size: 1.5vw;
+        font-weight: 100;
+      }
+
+      /*Image*/
+      .fourth .image img {
+        width: 74vw;
+        height: 39vw;
+        clear: both;
+        display: block;
+        margin: 4vw auto;
+    }
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
